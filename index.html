@@ -10,12 +10,26 @@
 
 <body>
     <h1>HELLO WORLD</h1>
-    <p id="welcome">Welcome</p>
 </body>
 
 <script>
     var name = prompt("What's your name?");
     document.getElementById("welcome").innerHTML = name;
 </script>
+
+<button onclick= "sayHello()"> Click me! </button>
+function sayHello(){
+	alert("Hello");
+}
+
+<button onclick= "count()"> Counter! </button>
+    <p id="number">0</p>
+var counter = 0;
+function count(){
+	counter = counter + 1;
+document.getElementById("number").innerHTML = counter;
+}
+
+
 
 </html>
